@@ -83,11 +83,6 @@ def perform_ok_analysis(data_sig, filepath, save=True):
     else:
         print("O K analysis complete. Results not saved (--no-save).")
 
-
-# ---------------------------------------------------------------------------
-# Internal helpers
-# ---------------------------------------------------------------------------
-
 def _detect_peaks(sig_sub):
     """Locate B peak (dominant maximum) and A peak (30 channels before B).
 
