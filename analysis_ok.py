@@ -105,7 +105,7 @@ def _make_particle_mask(sig_sub):
     via K-means on integrated intensity."""
     sig_sum = sig_sub.data.sum(axis=2)
     km = KMeans(n_clusters=OK_KMEANS_CLUSTERS,
-                n_init="auto", max_iter=OK_KMEANS_MAX_ITER)
+                n_init="10", max_iter=OK_KMEANS_MAX_ITER)
     labels = km.fit_predict(sig_sum.reshape(-1, 1))
 
     mean_intensity = [sig_sum.flatten()[labels == i].mean()
