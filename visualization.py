@@ -89,10 +89,6 @@ def combine_map(adf, ck_ionomer, ck_irox, vacancy_map):
     plt.show()
 
 
-# ---------------------------------------------------------------------------
-# Internal helpers
-# ---------------------------------------------------------------------------
-
 def _to_grayscale(adf):
     """Convert an ADF image to a 2-D float grayscale array.
 
