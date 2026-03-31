@@ -34,16 +34,6 @@ from config import (
 
 
 def perform_ok_analysis(data_sig, filepath, save=True):
-    """Run O K edge analysis on a loaded EELS signal.
-
-    Parameters
-    ----------
-    data_sig : HyperSpy EELSSpectrum
-    filepath : str
-        Path to the source file; used to derive the output directory.
-    save : bool
-        Write output files when True.
-    """
     dst_dir = os.path.dirname(filepath)
 
     print("Preprocessing O K spectrum (energy crop + stride binning)...")
