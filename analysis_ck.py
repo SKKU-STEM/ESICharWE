@@ -75,11 +75,6 @@ def perform_ck_analysis(data_sig, filepath, n_components, save=True):
     else:
         print("C K analysis complete. Results not saved (--no-save).")
 
-
-# ---------------------------------------------------------------------------
-# Internal helpers
-# ---------------------------------------------------------------------------
-
 def _build_hyperspy_signals(W, H, ref_sig, h, w):
     """Wrap NMF W and H matrices into HyperSpy signal objects."""
     n = H.shape[0]
